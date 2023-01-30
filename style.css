@@ -1,0 +1,114 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(./fonts/Montserrat-Light.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(./fonts/Montserrat-ExtraBold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(./fonts/Montserrat-Medium.ttf);
+    font-weight: 500;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-family: 'Montserrat';
+    font-size: 1.25em;
+}
+
+h1,
+h2 {
+    font-family: 'Montserrat';
+    font-weight: bold;
+}
+
+h5 {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 1.25em;
+}
+
+#header {
+    height: 100vh;
+    background: url(./img/header.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 10vh;
+}
+
+nav .brand {
+    width: 100px;
+    height: 60px;
+    margin-top: 5px;
+}
+
+nav ul {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 40%;
+}
+
+header {
+    height: 90vh;
+    /* padding: 10%; */
+}
+
+header h1 {
+    font-size: 3em;
+    letter-spacing: 1px;
+}
+
+header h2 {
+    font-size: 1.75em;
+}
+
+header .header-container {
+    display: grid;
+    grid-template-columns: 1fr 40%;
+    grid-template-rows: 1fr;
+    margin: auto 0;
+    width: 90%;
+    height: 90vh;
+}
+
+header .header-container .header-text {
+    display: flex;
+    flex-direction: column;
+    padding: 20% 0 10% 20%;
+    grid-area: 1/1/2/2;
+}
+
+header .header-container .header-text .header-title {
+    text-transform: capitalize;
+}
+
+header .header-image {
+    grid-area: 1/2/2/3;
+    width: 80%;
+    justify-self: center;
+    align-self: center;
+}
