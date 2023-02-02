@@ -7,11 +7,26 @@ menuToggle.addEventListener("click", function () {
 
 var swiper = new Swiper(".cards-swiper", {
   slidesPerView: 1,
-  direction: "vertical",
-  centeredSlides: false,
+  slidesPerGroup: 1,
+  spaceBetween: 20,
+  direction: getDirection(),
+  centeredSlides: true,
   dragable: true,
+  clickable: true,
+  on: {
+    resize: function () {
+      swiper.changeDirection(getDirection());
+    },
+  },
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
   },
 });
+
+function getDirection() {
+  var windowWidth = window.innerWidth;
+  var direction = window.innerWidth >= 760 ? 'vertical' : 'horizontal';
+
+  return direction;
+}
