@@ -13,6 +13,10 @@ var swiper = new Swiper(".cards-swiper", {
   centeredSlides: true,
   dragable: true,
   clickable: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
   on: {
     resize: function () {
       swiper.changeDirection(getDirection());
@@ -25,8 +29,7 @@ var swiper = new Swiper(".cards-swiper", {
 });
 
 function getDirection() {
-  var windowWidth = window.innerWidth;
-  var direction = window.innerWidth >= 760 ? 'vertical' : 'horizontal';
+  var direction = window.innerWidth >= 760 ? "vertical" : "horizontal";
 
   return direction;
 }
