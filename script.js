@@ -29,7 +29,11 @@ var swiper = new Swiper(".cards-swiper", {
 });
 
 function getDirection() {
-  var direction = window.innerWidth >= 760 ? "vertical" : "horizontal";
+  var direction = window.innerWidth > 768 ? "vertical" : "horizontal";
 
   return direction;
 }
+
+$('.swiper-slider').on('click', function () {
+  console.log('anjay');
+})
