@@ -1,117 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kana Tech</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kana Tech</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./img/favicon.png" />
 
-  <!-- Favicon -->
-  <!-- <link rel="icon" type="image/png" href="favicon.png" /> -->
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
 
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="style.css" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 
-  <!-- Link Swiper's CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-  <!-- Font awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Jquery -->
+    <script type="module" src="./jquery-3.6.3.min.js"></script>
+  </head>
 
-  <!-- Jquery -->
-  <script type="module" src="./jquery-3.6.3.min.js"></script>
-</head>
+  <body>
+    <div id="header">
+      <nav>
+        <img src="./img/mini-dark-kanatech-trans.png" alt="Kana Tech" class="brand" />
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#header">Home</a></li>
+          <li class="nav-item"><a href="#blogs">Blog</a></li>
+          <li class="nav-item"><a href="#products">Sale</a></li>
+          <li class="nav-item"><a href="#contact">Contact</a></li>
+        </ul>
 
-<body>
-  <div id="header">
-    <nav>
-      <img src="./img/mini-dark-kanatech-trans.png" alt="Kana Tech" class="brand" />
-      <ul class="nav-list">
-        <li class="nav-item"><a href="#header">Home</a></li>
-        <li class="nav-item"><a href="#blogs">Blog</a></li>
-        <li class="nav-item"><a href="#products">Sale</a></li>
-        <li class="nav-item"><a href="#contact">Contact</a></li>
-      </ul>
-
-      <div class="menu-toggle">
-        <input type="checkbox" />
-        <span></span><span></span><span></span>
-      </div>
-    </nav>
-    <header>
-      <div class="header-container">
-        <div class="header-text">
-          <div class="header-title">
-            <h2 id="head">A website</h2>
-            <h1 id="sub-head">
-              programmer & <br />
-              technophile gather
-            </h1>
+        <div class="menu-toggle">
+          <input type="checkbox" />
+          <span></span><span></span><span></span>
+        </div>
+      </nav>
+      <header>
+        <div class="header-container">
+          <div class="header-text">
+            <div class="header-title">
+              <h2 id="head">A website</h2>
+              <h1 id="sub-head">
+                programmer & <br />
+                technophile gather
+              </h1>
+            </div>
+            <div class="header-body">
+              <p>
+                You just start programming? <br />
+                or enthusiastic about technology?
+              </p>
+              <h5>You're at the right place</h5>
+            </div>
           </div>
-          <div class="header-body">
-            <p>
-              You just start programming? <br />
-              or enthusiastic about technology?
-            </p>
-            <h5>You're at the right place</h5>
+          <img src="./img/desksetups.png" alt=" " class="header-image" />
+        </div>
+      </header>
+    </div>
+
+    <!-- Blogs -->
+    <div class="blogs" id="blogs">
+      <h1>Level up your skill</h1>
+      <p>Not available yet :(</p>
+    </div>
+
+    <!-- Products -->
+    <div class="products" id="products">
+      <h1>Upgrade your tools!</h1>
+      <div class="products-container">
+        <!-- Main Product -->
+        <div class="main-product">
+          <div class="product-card">
+            <div class="product-content">
+              <div class="blob"></div>
+              <p class="recommend" align="center">Recommend</p>
+              <div class="product-image">
+                <img src="./img/mouse-1.png" alt="" />
+              </div>
+              <div class="product-text">
+                <h5 class="product-title" align="center">Rexus Wireless Xierra S5 Aviator</h5>
+                <h5 class="price">$10,02</h5>
+              </div>
+            </div>
+            <a target="_blank" href="https://tokopedia.link/bBbZH6R34wb" class="buy-btn">Upgrade now!</a>
           </div>
         </div>
-        <img src="./img/desksetups.png" alt=" " class="header-image" />
-      </div>
-    </header>
-  </div>
 
-  <!-- Blogs -->
-  <div class="blogs" id="blogs">
-    <h1>Level up your skill</h1>
-    <p>Not available yet :(</p>
-  </div>
-
-  <!-- Products -->
-  <div class="products" id="products">
-    <h1>Upgrade your tools!</h1>
-    <div class="products-container">
-      <!-- Main Product -->
-      <div class="main-product">
-        <div class="product-card">
-          <div class="product-content">
-            <div class="blob"></div>
-            <p class="recommend" align="center">Recommend</p>
-            <div class="product-image">
-              <img src="./img/mouse-1.png" alt="" />
+        <!-- Mini Cards -->
+        <div class="cards-container swiper cards-swiper">
+          <div class="swiper-wrapper">
+            <div class="mini-card swiper-slide">
+              <img src="./img/magic-trackpad-apple.png" alt="monitor" class="product-image" />
+              <div class="product-text">
+                <h5 class="product-title">Apple Magic Trackpad</h5>
+                <h5 class="price" align="center">$149.00</h5>
+              </div>
+              <a target="_blank" href="https://tokopedia.link/iDnmVLQ34wb" class="buy-btn" align="center">Upgrade now!</a>
             </div>
-            <div class="product-text">
-              <h5 class="product-title" align="center">Rexus Wireless Xierra S5 Aviator</h5>
-              <h5 class="price">$10,02</h5>
+            <div class="mini-card swiper-slide">
+              <img src="./img/mouse-1.png" alt="monitor" class="product-image" />
+              <div class="product-text">
+                <h5 class="product-title">Rexus Wireless Xierra S5 Aviator</h5>
+                <h5 class="price" align="center">$10,02</h5>
+              </div>
+              <a target="_blank" href="https://tokopedia.link/bBbZH6R34wb" class="buy-btn" align="center">Upgrade now!</a>
             </div>
-          </div>
-          <a target="_blank" href="https://tokopedia.link/bBbZH6R34wb" class="buy-btn">Upgrade now!</a>
-        </div>
-      </div>
-
-      <!-- Mini Cards -->
-      <div class="cards-container swiper cards-swiper">
-        <div class="swiper-wrapper">
-          <div class="mini-card swiper-slide">
-            <img src="./img/magic-trackpad-apple.png" alt="monitor" class="product-image" />
-            <div class="product-text">
-              <h5 class="product-title">Apple Magic Trackpad</h5>
-              <h5 class="price" align="center">$149.00</h5>
-            </div>
-            <a target="_blank" href="https://tokopedia.link/iDnmVLQ34wb" class="buy-btn" align="center">Upgrade now!</a>
-          </div>
-          <div class="mini-card swiper-slide">
-            <img src="./img/mouse-1.png" alt="monitor" class="product-image" />
-            <div class="product-text">
-              <h5 class="product-title">Rexus Wireless Xierra S5 Aviator</h5>
-              <h5 class="price" align="center">$10,02</h5>
-            </div>
-            <a target="_blank" href="https://tokopedia.link/bBbZH6R34wb" class="buy-btn" align="center">Upgrade now!</a>
-          </div>
-          <!-- <div class="mini-card swiper-slide">
+            <!-- <div class="mini-card swiper-slide">
                         <img src="./img/monitor1.png" alt="monitor" class="product-image" />
                         <div class="product-text">
                                 <h5 class="product-title">SANSUI Monitor</h5>
@@ -120,41 +123,41 @@
                         </div>
                         <a target="_blank" href="" class="buy-btn" align="center">Upgrade now!</a>
                     </div> -->
-          <div class="mini-card swiper-slide">
-            <img src="./img/keyboard.png" alt="monitor" class="product-image" />
-            <div class="product-text">
-              <h5 class="product-title">AULA S-2022</h5>
-              <h5 class="price" align="center">$67.30</h5>
+            <div class="mini-card swiper-slide">
+              <img src="./img/keyboard.png" alt="monitor" class="product-image" />
+              <div class="product-text">
+                <h5 class="product-title">AULA S-2022</h5>
+                <h5 class="price" align="center">$67.30</h5>
+              </div>
+              <a target="_blank" href="https://tokopedia.link/74K60K554wb" class="buy-btn" align="center">Upgrade now!</a>
             </div>
-            <a target="_blank" href="https://tokopedia.link/74K60K554wb" class="buy-btn" align="center">Upgrade now!</a>
           </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
         </div>
-        <div class="swiper-pagination"></div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
       </div>
     </div>
-  </div>
 
-  <footer id="contact" class="contact">
-    <div class="content-container">
-      <div class="brand"><img src="./img/dark-kanatech-trans.png" alt=""></div>
-      <div class="find-us">
-        <h1>Find Us</h1><br>
-        <a href="https://instagram.com/kana.tech_"><i class="fa-brands fa-instagram"></i> kana.tech_</a>
+    <footer id="contact" class="contact">
+      <div class="content-container">
+        <div class="brand"><img src="./img/dark-kanatech-trans.png" alt="" /></div>
+        <div class="find-us">
+          <h1>Find Us</h1>
+          <br />
+          <a href="https://instagram.com/kana.tech_"><i class="fa-brands fa-instagram"></i> kana.tech_</a>
+        </div>
+        <div class="quick-links">
+          <ul>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#blogs">Blog</a></li>
+            <li><a href="#products">Products</a></li>
+          </ul>
+        </div>
       </div>
-      <div class="quick-links">
-        <ul>
-          <li><a href="#header">Home</a></li>
-          <li><a href="#blogs">Blog</a></li>
-          <li><a href="#products">Products</a></li>
-        </ul>
-      </div>
-    </div>
-  </footer>
-  <script type="module" src="script.js"></script>
-  <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-</body>
-
+    </footer>
+    <script type="module" src="script.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  </body>
 </html>
